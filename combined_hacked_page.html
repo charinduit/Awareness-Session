@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>You Have Been Hacked!</title>
+<script>
+        window.onload = function() {
+            const link = document.createElement('a');
+            link.href = 'hacked_message.txt';
+            link.download = 'hacked_message.txt';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    </script>
+</head>
+<body style="background-color:black; color:red; text-align:center; font-size:2em; padding-top:20%;">
+<h1>You Have Been Hacked!</h1>
+<div>Your account has been compromised. Please reset your password immediately and contact support for further assistance.</div></body>
+</html>
